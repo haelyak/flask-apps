@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>The word triple:</h1>
+    <div><p>{{old_text}}</p></div>
+    <h2>The coordinates:</h2>
+    <div><p>{{new_text}}</p></div>
+    <h1>Google Map</h1>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <script>
+    function myMap() {
+    var mapProp= {
+    center:new google.maps.LatLng(-117.709814 , 34.106444),
+    zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfdcxA2f-DUb_qdhEmFC1mkVULRaAso2Y&callback=myMap"></script>
+{% endblock %}

@@ -1,0 +1,35 @@
+
+     <html>
+
+    <head>
+    <style>
+    table {
+        font-family: Helvetica, sans-serif; /*times, serif; /* /* arial, sans-serif */
+        border-collapse: collapse; /* separate */
+        /* width: 50%;  remove this */
+    }
+
+    td, th {
+        border: 2px solid rgb(100,100,100);  /* wow! */
+        text-align: left;
+        padding: 10px;           /* yikes! */
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+    tr:hover {background-color: blueviolet;}
+
+    tr:nth-child(even) {background-color: violet;}
+
+    </style>
+    </head>
+
+    <body>
+    <table>
+<tr> <td>w</td> <td>  60.00</td> </tr>
+<tr> <td>c</td> <td>  40.00</td> </tr>
+</table>
+
+    </body>
+    </html>
+    
